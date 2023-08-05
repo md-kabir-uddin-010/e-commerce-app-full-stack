@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* *::-webkit-scrollbar {
+    display: none;
+  }
+  * {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  } */
+  .on-dark {
+    background: #0d1425;
+    @apply text-white;
+  }
+  .on-dark-navbar {
+    background: #0f1a3a;
+    @apply text-white;
+  }
+  .on-light {
+    @apply text-white;
+    @apply bg-black;
+  }
+  .custom-grid {
+    grid-gap: 4px;
+    grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+  }
+}
